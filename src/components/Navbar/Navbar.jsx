@@ -1,6 +1,7 @@
 import Logo from"../../assets/logo.png";
 
 function Navbar({price}) {
+  const updatePrice = Math.round(price)
   return (
     <div className="container mx-auto justify-between flex bg-fuchsia-200 p-2">
       <img  className="w-10 h-10" src={Logo} alt="" />
@@ -14,7 +15,7 @@ function Navbar({price}) {
             <li>Home</li>
             <div className="">
            
-                <button> {price} Coin</button>
+                <button> {updatePrice} Coin</button>
             </div>
 
 

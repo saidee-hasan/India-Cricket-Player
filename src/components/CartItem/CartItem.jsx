@@ -8,7 +8,8 @@ function CartItem({product,handleAddProduct}) {
       <h1>{name}</h1>
       <p>{description}</p>
       <p>{price}</p>
-      <button onClick={()=>handleAddProduct(product)} className="bg-gray-500 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+     
+      <button onClick={()=>handleAddProduct(product)} className="bg-gray-500  text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
 
         Purchase
 

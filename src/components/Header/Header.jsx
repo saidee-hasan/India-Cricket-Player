@@ -11,7 +11,7 @@ function Header({handleClaimPrice}) {
         <img
           src={Bg}
           alt="Background"
-          className="w-full h-auto bg-black h-[300px] md:h-auto  "
+          className="w-full h-auto bg-black h-[400px] md:h-auto  "
         />
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 p-10">
           <div className="md:space-y-5  space-y-2 ">

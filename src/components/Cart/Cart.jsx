@@ -2,7 +2,7 @@
 function Cart({cart,handleDelete}) {
     const{name,description,price,image} = cart;
   return (
-    <div className="flex h-10 gap-5  bg-white rounded-md shadow-md ">
+    <div className="flex  gap-5  bg-white rounded-md shadow-md ">
 
         <h1>{name}</h1>
         <p>{description}</p>

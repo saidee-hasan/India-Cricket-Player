@@ -73,23 +73,25 @@ const removeProduct = addProduct.filter(p=> p.name !== id)
     const isExist = addProduct.find((p) => p.name == product.name);
 
 
+    if(price > 0){
+      if (isExist) {
+        addTost("Faild");
+  
+      } else {
+  
+      
+        if(addProduct.length <= 6 ){
+          handleIncreaseProduct(product.price)
+          const newCart = [...addProduct, product];
+          setAddProduct(newCart);
+          addTost(product.name);
+        }else{
+          addTost("After 7  ");
+        } 
+    }
 
-    if (isExist) {
-      addTost("Faild");
-
-    } else {
-
-    
-      if(addProduct.length <= 6  && price > 0){
-        handleIncreaseProduct(product.price)
-        const newCart = [...addProduct, product];
-        setAddProduct(newCart);
-        addTost(product.name);
-      }else{
-        addTost("After 7  ");
-      }
-     
-     
+    }else{
+      addTost("LOw blance ");
     }
   };
 
