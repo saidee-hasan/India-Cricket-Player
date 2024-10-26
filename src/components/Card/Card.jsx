@@ -14,7 +14,7 @@ function Card({handleAddProduct}) {
 
   return (
     <div className="mx-auto container">
-      <h1>Cart</h1>
+    
       <div className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-5">
         {
           product.map((p,index)=><CartItem key={index} product={p} handleAddProduct={handleAddProduct} />)

@@ -4,7 +4,7 @@ function Selected({addProduct,handleDelete,handleIsActive}) {
   console.log(addProduct)
   return (
     <div className="mx-auto container">
-      <h1>Selected</h1>
+    
 
      <div className="space-y-4">
       {

@@ -61,7 +61,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    console.log(`Deleting product with id: ${id}`);
+
 
     const updatedProducts = addProduct.filter((product) => product.name !== id);
 
@@ -75,7 +75,7 @@ function App() {
 
     if (price > 0) {
       if (isExist) {
-        addToast("Product already exists in the cart.");
+        addToast("Player already exists in the cart.");
       } else {
         if (addProduct.length < 7) {
           // Allow only up to 6 products
@@ -86,11 +86,11 @@ function App() {
 
           addToast(`Added ${product.name} to cart`);
         } else {
-          addToast("You cannot add more than 6 products.");
+          addToast("You cannot add more than 7 Player.");
         }
       }
     } else {
-      addToast("Low balance, please increase your funds.");
+      addToast("Low balance, please Claim your funds.");
     }
   };
 
@@ -111,7 +111,7 @@ function App() {
       />
 
 
-      
+
       <Navbar price={price} />
 
 

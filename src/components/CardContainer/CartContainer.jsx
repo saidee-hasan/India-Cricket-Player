@@ -4,7 +4,7 @@ function CardContainer({ handleIsActive, isActive, addProduct }) {
       <h1 className="text-lg md:text-xl font-bold mb-4 md:mb-0">
         {isActive.cart
           ? "Available Players"
-          : `Players ${addProduct.length} / 7`}
+          : `Selected Player ) ${addProduct.length} / 7`}
       </h1>
 
       <div className="flex flex-col md:flex-row gap-2 md:gap-4 w-full md:w-auto">
