@@ -11,34 +11,42 @@ import Logo from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
-    <>
-      <div className="relative container mx-auto mt-10">
-        <img
-          src={Bg}
-          alt="Background"
-          className="w-full h-[400px]  bg-gray-800  object-cover"
-        />
+    <div className="relative mt-40">
+      <div className="   md:w-11/12 mx-auto absolute  p-5   inset-0  z-30 text-white justify-center text-center">
+        <div className="relative  h-[200px] p-10 ">
+          <div
+            className="absolute inset-0 bg-cover bg-slate-400 bg-center  rounded-2xl"
+            style={{
+              backgroundImage: `url(${Bg})`,
 
-        <div className="absolute inset-0 flex items-center justify-center  p-5 md:p-10">
-          <div className="text-center md:space-y-5 space-y-2">
-            <h1 className="text-white font-bold text-lg md:text-2xl lg:text-3xl">
-              Assemble Your Ultimate Dream 11 Cricket Team
-            </h1>
+              backgroundSize: "cover", // Ensure the image covers the entire div
 
-            <p className="text-white text-sm md:text-base lg:text-lg">
-              Beyond Boundaries Beyond Limits
-            </p>
+              backgroundPosition: "center", // Center the image
+            }}
+          ></div>
 
-            <div className="mx-auto"></div>
+          <div className="relative container mx-auto px-4 z-10">
+            <h2 className="text-white text-2xl font-bold text-center mb-4 ">
+              Subscribe to Our Newsletter
+            </h2>
+
+            <div className="flex justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="p-3 rounded-l-md w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+
+              <button className="bg-blue-500 text-white p-3 rounded-r-md hover:bg-blue-600 transition duration-200">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-
-
-
-      <footer className="bg-gray-800 text-white py-10 ">
-        <img className="mx-auto mt-24" src={Logo} alt="" />
+      <footer className="bg-gray-800 text-white py-10   w-full absolute top-32 ">
+        <img className="mx-auto mt-32 " src={Logo} alt="" />
         <div className="container mx-auto px-4  ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* About Section */}
@@ -105,7 +113,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 

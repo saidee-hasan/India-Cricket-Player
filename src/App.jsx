@@ -109,7 +109,13 @@ function App() {
         theme="light"
         transition:Bounce
       />
+
+
+      
       <Navbar price={price} />
+
+
+
       <Header handleClaimPrice={handleClaimPrice} />
 
       <CartContainer
