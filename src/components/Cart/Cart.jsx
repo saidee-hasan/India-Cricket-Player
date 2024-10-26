@@ -1,26 +1,13 @@
-import { useEffect, useState } from "react"
-import CartItem from "../CartItem/CartItem";
 
-
-function Cart({handleAddProduct}) {
-
-  const [product,setProduct] = useState([]);
-  useEffect(()=>{
-    fetch("./fakeData.json")
-    .then(res => res.json())
-    .then(data => setProduct(data))
-  },[])
-
-
+function Cart({cart,handleDelete}) {
+    const{name,description,price,image} = cart;
   return (
-    <div className="mx-auto container">
-      <h1>Cart</h1>
-      <div className="grid grid-cols-4 gap-5">
-        {
-          product.map((p,index)=><CartItem key={index} product={p} handleAddProduct={handleAddProduct} />)
-        }
-      </div>
+    <div className="flex h-10 gap-5  bg-white rounded-md shadow-md ">
 
+        <h1>{name}</h1>
+        <p>{description}</p>
+        <button onClick={()=> handleDelete(cart.name)} className="bg-slate-500 p-2 rounded-md">delete</button>
+     
     </div>
   )
 }
