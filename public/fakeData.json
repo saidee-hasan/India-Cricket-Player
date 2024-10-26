@@ -1,59 +1,69 @@
 [
     {
+        "country":"india",
         "name": "Virat Kohli",
         "image": "https://i.ibb.co.com/Ch83ywK/download.jpg",
         "price": 1299.99,
         "description": "One of the best batsmen in modern cricket, known for his aggressive batting style and exceptional run-scoring ability."
     },
     {
+         "country":"india",
         "name": "Babar Azam",
         "image": "https://i.ibb.co.com/rwjQm8x/download-1.jpg",
         "price": 949.99,
         "description": "Captain of the Pakistan cricket team, recognized for his elegant batting and consistency across formats."
     },
     {
+         "country":"india",
         "name": "Kane Williamson",
         "image": "https://i.ibb.co.com/qdrYkhC/download-2.jpg",
         "price": 779.99,
         "description": "New Zealand's captain, known for his calm demeanor and outstanding technique as a batsman."
     },
     {
+         "country":"india",
         "name": "Rohit Sharma",
         "image": "https://i.ibb.co.com/qR2SSn4/download-3.jpg",
         "price": 999.99,
         "description": "An explosive opener for India, famous for his ability to score big centuries in limited-overs cricket."
     },
     {
+         "country":"india",
         "name": "Joe Root",
         "image": "https://i.ibb.co.com/2cyScbN/download-4.jpg",
         "price": 339.99,
         "description": "England's Test captain, known for his solid technique and ability to anchor the innings."
     },
     {
+         "country":"india",
         "name": "AB de Villiers",
         "image": "https://i.ibb.co.com/ns7HG4j/download-5.jpg",
         "price": 849.99,
         "description": "Former South African cricketer, celebrated for his innovative batting and exceptional fielding skills."
     },
     {
+         "country":"india",
         "name": "Steve Smith",
         "image": "https://i.ibb.co.com/jJfDYKK/download-6.jpg",
         "price": 659.99,
         "description": "Australian batsman known for his unorthodox style and remarkable consistency in Test cricket."
     },
     {
+         "country":"india",
         "name": "Ben Stokes",
         "image": "https://i.ibb.co.com/X8s16Gk/download-7.jpg",
         "price": 799.99,
         "description": "Dynamic all-rounder for England, famous for his match-winning performances in crucial games."
     },
     {
+         "country":"india",
         "name": "Jasprit Bumrah",
         "image": "https://i.ibb.co.com/fDzRt7v/download-9.jpg",
         "price": 629.99,
         "description": "India's premier fast bowler, known for his unique bowling action and ability to bowl yorkers at will."
     },
     {
+         "country":"india",
         "name": "Rashid Khan",
         "image": "https://i.ibb.co.com/JvrGb6Y/download-10.jpg",
         "price": 499.99,

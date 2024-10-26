@@ -4,7 +4,7 @@ import Coin from"../../assets/coin.png";
 function Navbar({price}) {
   const updatePrice = Math.round(price)
   return (
-    <div className=" w-full fixed z-50 bg-green-200  ">
+    <div className=" w-full fixed z-50 bg-green-200 p-3  ">
 
 <div className="  mx-auto justify-between flex bg-green-200  container">
       <img  className="w-10 h-10" src={Logo} alt="" />
