@@ -56,6 +56,7 @@ const Footer = () => {
                 We are dedicated to providing the best services to our
                 customers. Our goal is to exceed your expectations.
               </p>
+              
             </div>
             {/* Links Section */}
             <div>
@@ -94,6 +95,22 @@ const Footer = () => {
               <p className="text-gray-400">123 Main Street, City, Country</p>
               <p className="text-gray-400">Email: info@example.com</p>
               <p className="text-gray-400">Phone: (123) 456-7890</p>
+
+             
+
+          
+              <div className="flex ">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="p-3 rounded-l-md w-full sm:w-28 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+
+              <button className="bg-blue-500 text-white p-3 rounded-r-md hover:bg-blue-600 transition duration-200">
+                Subscribe
+              </button>
+            </div>
+           
             </div>
           </div>
           {/* Social Media Section */}
@@ -112,6 +129,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <br />
+        <hr />
+        <br />
+        <p className="text-center">@2024 Your Company All Rights Reserved.</p>
+
+
       </footer>
     </div>
   );
