@@ -26,7 +26,7 @@ function Header({handleClaimPrice}) {
 
                 <img
 
-                    className="mx-auto sm:w-32 w-28 md:w-auto"
+                    className="mx-auto sm:w-32 w-28 md:w-auto "
 
                     src={Banner}
 
