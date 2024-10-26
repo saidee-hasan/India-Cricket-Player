@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Virat Kohli",
+        "image": "https://example.com/images/virat_kohli.jpg",
+        "price": 299.99,
+        "description": "One of the best batsmen in modern cricket, known for his aggressive batting style and exceptional run-scoring ability."
+    },
+    {
+        "name": "Babar Azam",
+        "image": "https://example.com/images/babar_azam.jpg",
+        "price": 249.99,
+        "description": "Captain of the Pakistan cricket team, recognized for his elegant batting and consistency across formats."
+    },
+    {
+        "name": "Kane Williamson",
+        "image": "https://example.com/images/kane_williamson.jpg",
+        "price": 279.99,
+        "description": "New Zealand's captain, known for his calm demeanor and outstanding technique as a batsman."
+    },
+    {
+        "name": "Rohit Sharma",
+        "image": "https://example.com/images/rohit_sharma.jpg",
+        "price": 299.99,
+        "description": "An explosive opener for India, famous for his ability to score big centuries in limited-overs cricket."
+    },
+    {
+        "name": "Joe Root",
+        "image": "https://example.com/images/joe_root.jpg",
+        "price": 239.99,
+        "description": "England's Test captain, known for his solid technique and ability to anchor the innings."
+    },
+    {
+        "name": "AB de Villiers",
+        "image": "https://example.com/images/ab_de_villiers.jpg",
+        "price": 349.99,
+        "description": "Former South African cricketer, celebrated for his innovative batting and exceptional fielding skills."
+    },
+    {
+        "name": "Steve Smith",
+        "image": "https://example.com/images/steve_smith.jpg",
+        "price": 259.99,
+        "description": "Australian batsman known for his unorthodox style and remarkable consistency in Test cricket."
+    },
+    {
+        "name": "Ben Stokes",
+        "image": "https://example.com/images/ben_stokes.jpg",
+        "price": 299.99,
+        "description": "Dynamic all-rounder for England, famous for his match-winning performances in crucial games."
+    },
+    {
+        "name": "Jasprit Bumrah",
+        "image": "https://example.com/images/jasprit_bumrah.jpg",
+        "price": 229.99,
+        "description": "India's premier fast bowler, known for his unique bowling action and ability to bowl yorkers at will."
+    },
+    {
+        "name": "Rashid Khan",
+        "image": "https://example.com/images/rashid_khan.jpg",
+        "price": 199.99,
+        "description": "Afghan spin wizard, renowned for his leg-spin bowling and effectiveness in T20 leagues worldwide."
+    }
+]

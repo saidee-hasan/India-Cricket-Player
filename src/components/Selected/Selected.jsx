@@ -1,7 +1,7 @@
 
 function Selected() {
   return (
-    <div>
+    <div className="mx-auto container">
       <h1>Selected</h1>
     </div>
   )
