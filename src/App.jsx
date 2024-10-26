@@ -7,96 +7,93 @@ import Selected from "./components/Selected/Selected";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isActive, setIsActive] = useState({
     cart: true,
+
     status: "cart",
   });
 
-
-
-  const handleIsActive = (status) => {
-    if (status == "cart") {
-      setIsActive({
-        cart: true,
-        status: "active",
-      });
-    } else {
-      setIsActive({
-        cart: false,
-        status: "selected",
-      });
-    }
-  };
-
   const [price, setPrice] = useState(0); // Initial price
-
-const handleIncreaseProduct = (pr)=>{
-  if(price > 0){
-    setPrice(price - pr)
-  }
-  
-
-
-
-}
-  const handleClaimPrice = () => {
-    setPrice((prevPrice) => prevPrice + 10000); // Double the price
-  };
 
   const [addProduct, setAddProduct] = useState([]);
 
-  const addTost = (id) => {
-    toast(`🦄 ${id}`, {
+  const handleIsActive = (status) => {
+    setIsActive({
+      cart: status === "cart",
+
+      status: status === "cart" ? "active" : "selected",
+    });
+  };
+
+  const handleIncreaseProduct = (amount) => {
+    if (price > 0) {
+      setPrice((prevPrice) => Math.max(prevPrice - amount, 0)); // Prevent price from going below 0
+    }
+  };
+
+  const handleClaimPrice = () => {
+    setPrice((prevPrice) => prevPrice + 10000); // Increase price by 10,000
+  };
+
+  const addToast = (message) => {
+    toast(`🦄 ${message}`, {
       position: "top-center",
+
       autoClose: 5000,
+
       hideProgressBar: false,
+
       closeOnClick: true,
+
       pauseOnHover: true,
+
       draggable: true,
+
       progress: undefined,
+
       theme: "light",
+
       transition: Bounce,
     });
   };
 
-  const handleDelete = (id)=>{
-    console.log(id)
-const removeProduct = addProduct.filter(p=> p.name !== id)
-  setAddProduct(removeProduct)
+  const handleDelete = (id) => {
+    console.log(`Deleting product with id: ${id}`);
 
-}
+    const updatedProducts = addProduct.filter((product) => product.name !== id);
+
+    setAddProduct(updatedProducts);
+
+    addToast(`Removed ${id} from cart`);
+  };
 
   const handleAddProduct = (product) => {
+    const isExist = addProduct.find((p) => p.name === product.name);
 
-    const isExist = addProduct.find((p) => p.name == product.name);
-
-
-    if(price > 0){
+    if (price > 0) {
       if (isExist) {
-        addTost("Faild");
-  
+        addToast("Product already exists in the cart.");
       } else {
-  
-      
-        if(addProduct.length <= 6 ){
-          handleIncreaseProduct(product.price)
-          const newCart = [...addProduct, product];
-          setAddProduct(newCart);
-          addTost(product.name);
-        }else{
-          addTost("After 7  ");
-        } 
-    }
+        if (addProduct.length < 7) {
+          // Allow only up to 6 products
 
-    }else{
-      addTost("LOw blance ");
+          handleIncreaseProduct(product.price);
+
+          setAddProduct((prevProducts) => [...prevProducts, product]);
+
+          addToast(`Added ${product.name} to cart`);
+        } else {
+          addToast("You cannot add more than 6 products.");
+        }
+      }
+    } else {
+      addToast("Low balance, please increase your funds.");
     }
   };
 
-
-console.log(addProduct)
   return (
     <div>
       <ToastContainer
@@ -115,13 +112,20 @@ console.log(addProduct)
       <Navbar price={price} />
       <Header handleClaimPrice={handleClaimPrice} />
 
-      <CartContainer addProduct={addProduct}  handleIsActive={handleIsActive} isActive={isActive} />
+      <CartContainer
+        addProduct={addProduct}
+        handleIsActive={handleIsActive}
+        isActive={isActive}
+      />
 
       {isActive.cart ? (
         <Cart handleAddProduct={handleAddProduct} />
       ) : (
-        <Selected addProduct={addProduct} handleDelete={handleDelete} />
+        <Selected addProduct={addProduct} handleDelete={handleDelete}  handleIsActive={handleIsActive} />
       )}
+
+<Footer/>
+
     </div>
   );
 }
