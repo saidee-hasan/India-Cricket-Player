@@ -39,7 +39,7 @@ function App() {
   };
 
   const addToast = (message) => {
-    toast(`🦄 ${message}`, {
+    toast(` ${message}`, {
       position: "top-center",
 
       autoClose: 5000,
@@ -84,13 +84,13 @@ function App() {
 
           setAddProduct((prevProducts) => [...prevProducts, product]);
 
-          addToast(`Added ${product.name} to cart`);
+          addToast(`✅  Added ${product.name} to cart`);
         } else {
-          addToast("You cannot add more than 7 Player.");
+          addToast(" ❌ You cannot add more than 7 Player.");
         }
       }
     } else {
-      addToast("Low balance, please Claim your funds.");
+      addToast(" ❌ Low balance, please Claim your funds.");
     }
   };
 
